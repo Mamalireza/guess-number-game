@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number!</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-press-start-2p relative flex h-dvh w-full flex-col bg-neutral-800 text-neutral-50"
+  >
+    <header class="flex items-center justify-between p-10">
+      <button
+        type="reset"
+        id="again"
+        class="cursor-pointer bg-neutral-50 px-8 py-5 text-xl text-neutral-800 transition-all duration-200 hover:bg-neutral-300"
+      >
+        Again!
+      </button>
+      <p class="text-sm">(Between 1 and 20)</p>
+    </header>
+
+    <main class="flex flex-1 flex-col items-center">
+      <div class="flex w-full flex-col items-center gap-10">
+        <h1 class="text-5xl">Guess My Number!</h1>
+        <div class="flex w-full items-center">
+          <hr class="h-2 flex-1 bg-neutral-50" />
+          <div
+            id="number"
+            class="w-40 bg-neutral-50 py-8 text-center text-6xl text-neutral-800"
+          >
+            ?
+          </div>
+          <hr class="h-2 flex-1 bg-neutral-50" />
+        </div>
+      </div>
+
+      <div class="flex w-full flex-1 items-center justify-around">
+        <section class="flex w-lg flex-col items-center gap-8">
+          <input
+            type="number"
+            id="guess"
+            class="w-64 border-4 border-neutral-50 p-6 text-center text-5xl"
+            placeholder="??"
+          />
+          <button
+            type="button"
+            id="check"
+            class="cursor-pointer bg-neutral-50 px-8 py-5 text-xl text-neutral-800 transition-all duration-200 hover:bg-neutral-300"
+          >
+            Check!
+          </button>
+        </section>
+
+        <section class="flex w-lg flex-col gap-8 text-xl">
+          <p id="message" class="mb-12">Start guessing...</p>
+          <p>Score: <span id="score">20</span></p>
+          <p>High Score: <span id="highScore">0</span></p>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "guess-number-game",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Mamalireza/guess-number-game#readme",
+  "bugs": {
+    "url": "https://github.com/Mamalireza/guess-number-game/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mamalireza/guess-number-game.git"
+  },
+  "license": "MIT",
+  "author": "Mohamadreza Mostahsan",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./main.css -o ./style.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2"
+  }
+}
